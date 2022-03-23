@@ -642,6 +642,8 @@ window.__require = function e(t, n, r) {
         var zuidafanshu = this.getSelectedOfRadioGroup("zuidafanshu");
         var jushuxuanze = this.getSelectedOfRadioGroup("xuanzejushu");
         var dianganghua = this.getSelectedOfRadioGroup("dianganghua");
+        var paixingxuanze = parseInt(this.node.getChildByName("paixingxuanze").getComponent(cc.EditBox).string);
+        console.log("paixingxuanze:", paixingxuanze);
         var conf = {
           difen: difen,
           zimo: zimo,
@@ -651,7 +653,8 @@ window.__require = function e(t, n, r) {
           jushuxuanze: jushuxuanze,
           dianganghua: dianganghua,
           menqing: menqing,
-          tiandihu: tiandihu
+          tiandihu: tiandihu,
+          paixingxuanze: paixingxuanze
         };
         return conf;
       },
